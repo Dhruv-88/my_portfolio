@@ -1,0 +1,31 @@
+/* Certifications.css */
+body {
+  margin: 0; /* Remove default margin */
+  background-color: black; 
+}
+.certifications-container {
+  background-color: black;
+  height: 100vh; /* 80% of the viewport height */
+  width: 100vw; /* 80% of the viewport width */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  color: white; /* Text color */
+
+}
+
+.certification-content {
+  width: 80%; /* 80% of the parent container's width */
+  height: 80%; /* 80% of the parent container's height */
+  margin: auto; /* Center the certification content */
+  background-color: #333; /* Example background color */
+  padding: 20px; /* Add padding as needed */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin-bottom: 20px; /* Add space between certifications */
+}
+
+.certification-content h1 {
+  color: #61dafb; /* Title color */
+}
+
+
+
+/* Add any additional styling as needed */

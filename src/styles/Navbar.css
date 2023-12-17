@@ -1,0 +1,73 @@
+/* src/components/Navbar.css */
+
+
+.body{
+  font-family: 'Lato', sans-serif;
+}
+.navbar {
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .name-link {
+    color: white;
+    cursor: pointer;
+    padding: 10px; /* Add padding as needed */
+    margin: 2vw;
+    font-size:xx-large;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .button-style {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px; /* Add padding as needed */
+    margin: 2vh; /* Add margin as needed */
+    font-size:x-large;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  /* src/styles/Navbar.css */
+
+.navbar {
+  height: 10vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: opacity 0.6s ease-in-out; /* Adjust the duration as needed */
+}
+
+/* Additional styles for the fixed state */
+.navbar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Adjust the z-index as needed */
+}
+
+  
+  /* Style for the hidden state */
+  .navbar.hidden {
+    opacity: 0;
+    pointer-events: none; /* Disable interaction when hidden */
+  }
+
+  @media (max-width: 768px) {
+    .button-style {
+      margin: 1vh; 
+      font-size:small;
+      padding: 5px 10px; 
+    }
+  }

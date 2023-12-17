@@ -1,0 +1,120 @@
+/* src/App.css */
+/* 
+ body {
+  cursor: none; /* Hide the default cursor 
+}  
+*/
+
+
+.section {
+    width: 100vw;
+  }
+  
+  .section1 {
+    height: 80vh;
+    background-color: black;
+   
+    /* Additional styles for Section 1 */
+  }
+  .section1 .left-part {
+    width: 70%;
+    height:100%;
+    padding: 20px; /* Add padding as needed */
+    box-sizing: border-box; /* Include padding in the element's total width */
+    color: white;
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    justify-content:flex-end;
+    font-size: xx-large;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+
+  }
+  
+  .section1 .right-part {
+    width: 30%;
+    /* Additional styles for the right part, if needed */
+  }
+  
+  .section2 {
+    height: 60vh;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* Additional styles for Section 2 */
+  }
+
+  .section2 h1{
+    width: 50vw;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.7;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .section2 h2{
+    font-size: xx-large;
+    
+    /* Additional styles for Section 2 */
+  }
+
+  .section2 button{
+    height:10vh;
+    width: 13vw;
+    background-color: black;
+    color: white;
+    align-self: center;
+    align-items: center;
+    border-radius: 10vh;
+    margin-top: 5vh;
+    font-size: large;
+  }
+  .section3 {
+    height: 60vh;
+    background-color: black;
+    /* Additional styles for Section 3 */
+  }
+  
+  .section4 {
+    height: 30vh;
+    background-color: White;
+    /* Additional styles for Section 4 */
+  }
+  
+  .section5 {
+    background-color: black;
+    height: 30vh;
+    /* Additional styles for Section 5 */
+  }
+  .custom-cursor {
+    position: fixed;
+    width: 30px; /* Adjust the outer circle size as needed */
+    height: 30px; /* Adjust the outer circle size as needed */
+    border: 2px solid grey; /* Border for the outer circle */
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999; /* Ensure the cursor stays on top of other elements */
+    animation: cursorAnimation 1s infinite linear;
+  }
+  
+  .inner-dot {
+    width: 6px; /* Adjust the inner dot size as needed */
+    height: 6px; /* Adjust the inner dot size as needed */
+    background-color: grey; /* Color for the inner dot */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes cursorAnimation {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
