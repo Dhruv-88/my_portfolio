@@ -6,13 +6,17 @@
 */
 
 
+
 .section {
     width: 100vw;
   }
   
   .section1 {
     height: 80vh;
-    background-color: black;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-color: rgba(2,9,25,255);
+    background-position: 50vh;
    
     /* Additional styles for Section 1 */
   }
@@ -54,16 +58,11 @@
     font-family: 'Lato', sans-serif;
   }
   
-  .section2 h2{
-    font-size: xx-large;
-    
-    /* Additional styles for Section 2 */
-  }
 
   .section2 button{
     height:10vh;
     width: 13vw;
-    background-color: black;
+    background-color: rgba(2,9,25,255);
     color: white;
     align-self: center;
     align-items: center;
@@ -73,7 +72,7 @@
   }
   .section3 {
     height: 60vh;
-    background-color: black;
+    background-color: rgba(2,9,25,255);
     /* Additional styles for Section 3 */
   }
   
@@ -84,7 +83,7 @@
   }
   
   .section5 {
-    background-color: black;
+    background-color: rgba(2,9,25,255);
     height: 30vh;
     /* Additional styles for Section 5 */
   }
@@ -116,5 +115,40 @@
     }
     100% {
       transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .section1{
+      background-size:100vh;
+      background-position: 1vh 10vw;
+    }
+    .section1 .left-part {
+      
+      font-size: medium;
+    }
+
+    .section2 h1{
+      font-size: medium;
+      
+      /* Additional styles for Section 2 */
+    }
+
+    .section2 button{
+      height:7vh;
+      width: 40vw;
+      background-color: rgba(2,9,25,255);
+      color: white;
+      align-self: center;
+      align-items: center;
+      border-radius: 10vh;
+      margin-top: 5vh;
+      font-size: small;
+    }
+
+    .section2 h1{
+      width: 80vw;
+      
     }
   }

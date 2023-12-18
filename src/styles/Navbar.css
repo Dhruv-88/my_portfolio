@@ -7,7 +7,7 @@
 .navbar {
     height: 10vh;
     width: 100vw;
-    background-color: black;
+    background-color: rgba(2,9,25,255);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +27,7 @@
   }
   
   .button-style {
-    background-color: black;
+    background-color: rgba(2,9,25,255);
     color: white;
     border: none;
     cursor: pointer;
@@ -42,11 +42,12 @@
 .navbar {
   height: 10vh;
   width: 100vw;
-  background-color: black;
+  background-color: rgba(2,9,25,255);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: opacity 0.6s ease-in-out; /* Adjust the duration as needed */
+  transition: opacity 0.10s ease-in-out; /* Adjust the duration as needed */
+  
 }
 
 /* Additional styles for the fixed state */

@@ -1,27 +1,27 @@
 import React from 'react';
 import Navbar from './Navbar';
 import '../styles/Home.css'; // Import the CSS file
-
+import Wave from '../wave.png'
 const App = () => {
  
   
   return (
 
-   
+    
     <div>
       
       <Navbar />
 
       {/* Section 1 */}
-      <div className="section section1">
+      <div className="section section1" style={{ backgroundImage: `url(${Wave})` }}>
         <div className="left-part">
-            <h2>Dhruv is Aspiring Data Analyst With Strong Analytical Skills, Committed to Transforming Data into Actionable Insights.</h2>
+            <h2>I'm Aspiring Data Analyst With Strong Analytical Skills, Committed to Transforming Data into Actionable Insights.</h2>
             
             </div>
 
             {/* Right Part */}
             <div className="right-part">
-            {/* Content for the right part, if needed */}
+            
             </div>
       </div>
 
