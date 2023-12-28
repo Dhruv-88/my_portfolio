@@ -1,0 +1,40 @@
+/* SplitSection.css */
+.split-section {
+    display: flex;
+  }
+  
+  .left-half,
+  .right-half {
+    height:50vh;
+    width:50vw;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .left-half {
+    background-color: grey;
+    color: white;
+  }
+  
+  .right-half {
+    background-color: lightgrey;
+    color: white;
+  }
+
+  .left-half,
+  .right-half p{
+    text-align:center;
+  }
+  
+  .image {
+    width: 20vw;
+    height: 30vh; 
+    margin-right: 10px;
+  
+  }
+  
+  

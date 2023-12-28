@@ -1,0 +1,77 @@
+h1, p {
+    font-family: Lato;
+  }
+  
+  .slider-wrapper{ }
+  
+ 
+
+  .slider-container {
+    background-color: rgba(2,9,25,255);
+    box-sizing: border-box;
+    
+  }
+  
+  .Expertices{
+   padding:2vh;
+  }
+  .slider-list{
+    display: inline-flex;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding-left :2vw; /* fix width = 400 */ 
+    padding-right :2vw ;
+    
+  
+}
+  
+  .slider-item {
+    background-color: rgba(2,9,25,255);
+    width: 20vw; /* fix width = 400 */ 
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin:2vw;
+    border-radius:2vh;
+    
+   
+  }   
+
+  
+
+  .slider-item img{
+    width: 20vw; /* fix width = 400 */ 
+    height: 35vh;
+    border-radius:2vh;
+  }
+
+
+  .slider-item.active {
+    transform: scale(1.2); /* Increase the size for the active class */
+  }
+  
+  .uniqueclass{
+    align-self:'center';
+    color:'white'
+  }
+  /* @ media-large */ 
+  
+  @media (max-width: 1000px) {
+    .slider-container {
+      padding-right: 5vw !important; /* dynamic width = 80vh */ 
+    }
+    .slider-item {
+      width: 80vw; /* dynamic width = 80vh */ 
+    
+      
+    }
+    .slider-item img{
+        width: 80vw;
+        height: 40vh;
+      }
+  }
+  
+    

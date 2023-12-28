@@ -7,23 +7,51 @@
 
 
 
+@keyframes pop-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.right-half {
+  flex: 1;
+  background-color: lightgrey; /* Change this to your desired color */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+/* Change this to your desired text color */
+}
+
+
+
+
+
+
 .section {
     width: 100vw;
   }
   
   .section1 {
-    height: 80vh;
+    height: 90vh;
     background-repeat:no-repeat;
-    background-size:cover;
-    background-color: rgba(2,9,25,255);
-    background-position: 50vh;
+   
+    background-color: black;
+    background-position:0 -20vh;
+    background-image:url('../assets/back2.jpg');
+    background-size:100vw 100vh;
+    
+   
    
     /* Additional styles for Section 1 */
   }
-  .section1 .left-part {
-    width: 70%;
+  .section1 .left-part{
+    width: 80%;
     height:100%;
-    padding: 20px; /* Add padding as needed */
+     /* Add padding as needed */
     box-sizing: border-box; /* Include padding in the element's total width */
     color: white;
     display: flex;
@@ -32,20 +60,25 @@
     font-size: xx-large;
     font-family: 'Lato', sans-serif;
     line-height: 1.5;
+    padding:5vh;
 
   }
   
+  .left-part p{
+    font-size:50px;
+  }
   .section1 .right-part {
     width: 30%;
     /* Additional styles for the right part, if needed */
   }
   
   .section2 {
-    height: 60vh;
+    height: 50vh;
     background-color: white;
     justify-content: center;
     display: flex;
     flex-direction: column;
+    border:1px solid black;
     /* Additional styles for Section 2 */
   }
 
@@ -59,74 +92,240 @@
   }
   
 
-  .section2 button{
-    height:10vh;
+  .section2 button {
+    height: 10vh;
     width: 13vw;
-    background-color: rgba(2,9,25,255);
+    background-color: rgba(2, 9, 25, 255);
     color: white;
     align-self: center;
     align-items: center;
     border-radius: 10vh;
     margin-top: 5vh;
     font-size: large;
-  }
-  .section3 {
-    height: 60vh;
-    background-color: rgba(2,9,25,255);
-    /* Additional styles for Section 3 */
-  }
+    border-width:0;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.section2 button:hover {
+  background-color:grey;
+}
+
+
+
+.section3 {
+  height: 100vh;
+  background-image: url('../assets/back7.jpg');
+  background-size:100vw 100vh;
+  repeat:false;
+  font-family:'Lato';
+ 
   
-  .section4 {
-    height: 30vh;
-    background-color: White;
+ 
+}
+
+/* YourComponent.css */
+
+
+
+.subsection1 {
+  /* Add styles for the subsection1 container here */
+}
+
+.subsection1 h1{
+  color: white;
+  text-align: center;
+  padding:3vh 0;
+  font-size:60px;
+}
+
+.section3 img{
+  height: 50vh;
+  width: 50vw;
+  margin: 2vh auto; /* Adjust margin as needed */
+  display: block;
+  border-radius:1vh;
+  
+}
+
+.subsection2{
+  width:100vw;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+.subsection2 h2 {
+  color: white;
+  text-align: center;
+  align-self:center;
+  
+}
+
+.subsection2 button{
+  background-color: white;
+  align-self:center;
+  color: black;
+  height: 10vh;
+  width: 13vw;
+  transition: background-color 0.3s ease;
+  border-radius: 10vh;
+  border-width:0px;
+  font-size:large;
+  
+}
+
+button:hover {
+  background-color:grey;
+    color:white;
+  
+}
+
+
+
+
+
+  .section4{
+    height: 60vh;
+    display: flex;
+    background-color: white;
+    font-family:'Lato'; /* Adjust the top margin as needed */
+    text-align: center;
+    text-align: center;
+    display:'flex';
+    flex-direction:column;
+   
+   
+    
     /* Additional styles for Section 4 */
   }
   
+/* YourComponent.css */
+
+
+
+p {
+  margin-top:10vh;
+  margin-bottom: 2vh;
+  font-size:50px;
+}
+
+.Certifications {
+  margin-top:15vh;
+  display: flex;
+  justify-content: space-around;
+  width:90vw;
+  align-self:center;
+}
+
+.CertiSubContainer {
+  
+  text-align: center;
+  display:flex;
+  flex-direction:row;
+
+ 
+ 
+}
+
+.CertiSubContainer img {
+  width:5vh;
+  height:5vh; 
+
+}
+
+.CertiSubContainer h2 {
+  margin-top: 1vh;
+  align-self:center;
+  padding-left:0.5vw;
+}
+
+
+
+  /* --- */
+
+
+  
+
+
+
   .section5 {
-    background-color: rgba(2,9,25,255);
-    height: 30vh;
+    background-color: black;
+    height: 50vh;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
     /* Additional styles for Section 5 */
   }
-  .custom-cursor {
-    position: fixed;
-    width: 30px; /* Adjust the outer circle size as needed */
-    height: 30px; /* Adjust the outer circle size as needed */
-    border: 2px solid grey; /* Border for the outer circle */
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999; /* Ensure the cursor stays on top of other elements */
-    animation: cursorAnimation 1s infinite linear;
-  }
   
-  .inner-dot {
-    width: 6px; /* Adjust the inner dot size as needed */
-    height: 6px; /* Adjust the inner dot size as needed */
-    background-color: grey; /* Color for the inner dot */
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
   
-  @keyframes cursorAnimation {
-    0% {
-      transform: translate(-50%, -50%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg);
-    }
+
+  .section5 p{
+    color:white;
+    font-size:60px;
+    align-self:center;
   }
 
+  .section5 button{
+    background-color: white;
+    align-self:center;
+    color: black;
+    height: 10vh;
+    width: 13vw;
+    transition: background-color 0.3s ease;
+    border-radius: 10vh;
+    border-width:0px;
+    margin-top:10vh;
+    font-size:large;
+    
+  }
+
+  .section5 button:hover{
+   
+    background-color:grey;
+    color:white
+  }
+
+
+  .Section6{
+    background-color: black;
+    height: 50vh;
+    display:flex;
+    flex-direction:row;
+    color:white
+  }
+
+  .Section6 .Subsection1{
+    align-self:left;
+    padding-left:5vw;
+    justify-content:center;
+  }
+   
+  .Section6 .Subsection1 p{
+    font-size:25px;
+    justify-content:space-around;
+    text-decoration: underline;
+    
+  }
+
+
+
+ 
+  
+  
+ 
 
   @media (max-width: 768px) {
     .section1{
       background-size:100vh;
-      background-position: 1vh 10vw;
+      background-position:0 -10vh;
     }
     .section1 .left-part {
-      
+      width:80vw;
       font-size: medium;
+    }
+
+    .left-part p{
+      font-size:23px;
     }
 
     .section2 h1{
@@ -138,7 +337,7 @@
     .section2 button{
       height:7vh;
       width: 40vw;
-      background-color: rgba(2,9,25,255);
+      background-color: black;
       color: white;
       align-self: center;
       align-items: center;
@@ -151,4 +350,81 @@
       width: 80vw;
       
     }
+
+    .subsection1 h1{  
+      font-size:30px;
+    }
+    
+    .section3 img{
+      height: 35vh;
+      width:70vw;
+      margin: 3vh auto; 
+    
+    }
+    
+   
+    .subsection2 h2 {
+      color: white;
+      
+      align-self:center;
+      font-size:15px;
+      width:80vw;
+      margin-top:5vh;
+      
+    }
+    
+    .subsection2 button{
+      background-color: white;
+      align-self:center;
+      color: black;
+      height:7vh;
+      width: 40vw;
+      transition: background-color 0.3s ease;
+      border-radius: 10vh;
+      border-width:0px;
+      font-size:small;
+      margin-top:10vh;
+      
+    }
+   /* section4 */
+    .section4 p {
+      font-size:30px;
+    }
+    
+    .Certifications {
+      margin-top:15vh;
+      display: flex;
+      justify-content: space-around;
+      width:90vw;
+      align-self:center;
+    }
+    
+    .CertiSubContainer {
+      flex-direction:column;
+
+    }
+    
+    .CertiSubContainer img {
+      width:5vh;
+      height:5vh; 
+      align-self:center;
+    }
+  
+    .CertiSubContainer h2 {
+      font-size:15px;
+    }
+
+    /* section5 */
+
+    .section5 p{
+      font-size:30px;
+    }
+
+    .section5  button{
+      height:7vh;
+      width: 40vw;
+      font-size:small;
+    }
+
+   
   }

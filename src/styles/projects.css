@@ -1,0 +1,79 @@
+.body{
+    font-family: 'Lato', sans-serif;
+}
+.Myworktext{
+    font-size:60px;
+    font-family: 'Lato', sans-serif;
+    align-self:center;
+    width:100vw;
+    
+    justify-content:center;
+    display:flex;
+}
+
+.sectiontitle{
+    width:90vw;
+   
+    margin:auto;
+}
+.sectiontitle p{
+    font-size:30px;
+}
+.project-section {
+    height:70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2%;
+    background-color:black;
+  }
+  
+  .project-wrapper {
+    width: 48%; 
+    height:70vh;
+    margin-bottom: 4%;
+  }
+  
+  .project-title {
+    margin-top: 2vh;
+    background-color:black;
+    color:white;
+    text-align: start;
+    font-family:'Lato';
+
+    
+  }
+  
+  .project-container {
+    height: 70vh; 
+    display:flex;
+    justify-content:center;
+    align-self:center;
+  }
+  
+  .project-image {
+    width: 80%;
+    height:80%;
+    align-self:center;
+    transition:0.3s;
+    
+  }
+
+  .project-image:hover {
+    width: 90%;
+    height:90%;
+    align-self:center;
+    transition:0.3s;
+    
+  }
+  
+
+ 
+
+@media (max-width: 768px) {
+
+    .Myworktext{
+        font-size:30px;
+    }
+
+}
