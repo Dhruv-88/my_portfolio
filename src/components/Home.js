@@ -15,10 +15,6 @@ import ProjectImage from '../assets/projectImage.png';
 const App = () => {
   const navigate = useNavigate();
  
-
-  
-
-
   return (
 
     
