@@ -4,29 +4,21 @@ import React from 'react';
 import '../styles/projects.css'; // Add your CSS file for styling
 import Navbar from './Navbar';
 import FinancialReport from '../assets/financialreport.png';
+import { useNavigate } from 'react-router-dom';
+import projectsData from '../projectData/projectData.js';
 
 const Project_Page = () => {
+  const navigate = useNavigate();
+
   
-  const projects = [
-    { id: 1, imageSource: FinancialReport, bgColor: '#AC9B8E',title:'First Project' },
-    { id: 2, imageSource: FinancialReport, bgColor: '#E4E2E5',title:'Second Project' },
-  ];
+  const BIprojects = projectsData.filter((project) => project.projectCategory === 'BIproject');
+  const DAR = projectsData.filter((project) => project.projectCategory === 'DAR');
+  const ExcelProjects = projectsData.filter((project) => project.projectCategory === 'Excel');
+  const ReactNAtive = projectsData.filter((project) => project.projectCategory === 'APPLICATION');
 
-  const DAR = [
 
-    { id: 2, imageSource: FinancialReport, bgColor: '#3A302E',title:'Second Project' },
-    { id: 1, imageSource: FinancialReport, bgColor: '#CFC5B1',title:'First Project' }
-  ];
 
-  const ExcelProjects=[
-    { id: 2, imageSource: FinancialReport, bgColor: '#7E693E',title:'Second Project' },
-    { id: 1, imageSource: FinancialReport, bgColor: '#4D1C13',title:'First Project' }
-  ]
-
-  const ReactNAtive=[
-    { id: 2, imageSource: FinancialReport, bgColor: '#626635',title:'Second Project' },
-    { id: 1, imageSource: FinancialReport, bgColor: '#DEAE4D',title:'First Project' }
-  ]
+  
   return (
     <div className="certifications-container">
       <Navbar/>
@@ -39,11 +31,22 @@ const Project_Page = () => {
         </h1>
       </div>
       <div className="project-section">
-        {projects.map((project) => (
+        {BIprojects.map((project) => (
           <div key={project.id} className="project-wrapper">
             
-            <div className="project-container" style={{ backgroundColor: project.bgColor }}>
-              <img src={project.imageSource} alt={`Project ${project.id}`} className="project-image" />
+            <div 
+             className="project-container" 
+             style={{ backgroundColor: project.bgColor }}
+             onClick={
+              ()=>{
+                navigate(`/IndevidualProject/${project.id}`)
+              }
+             }
+             >
+              <img src={project.imageSource} 
+                alt={`Project ${project.id}`} 
+                className="project-image" 
+              />
             </div>
             <h1 className="project-title">{project.title}</h1>
           </div>
@@ -60,7 +63,14 @@ const Project_Page = () => {
         {DAR.map((project) => (
           <div key={project.id} className="project-wrapper">
             
-            <div className="project-container" style={{ backgroundColor: project.bgColor }}>
+            <div className="project-container"
+             style={{ backgroundColor: project.bgColor }}
+             onClick={
+              ()=>{
+                navigate(`/IndevidualProject/${project.id}`)
+              }
+             }
+             >
               <img src={project.imageSource} alt={`Project ${project.id}`} className="project-image" />
             </div>
             <h1 className="project-title">{project.title}</h1>
@@ -79,7 +89,14 @@ const Project_Page = () => {
         {ExcelProjects.map((project) => (
           <div key={project.id} className="project-wrapper">
             
-            <div className="project-container" style={{ backgroundColor: project.bgColor }}>
+            <div className="project-container"
+             style={{ backgroundColor: project.bgColor }}
+             onClick={
+              ()=>{
+                navigate(`/IndevidualProject/${project.id}`)
+              }
+             }
+             >
               <img src={project.imageSource} alt={`Project ${project.id}`} className="project-image" />
             </div>
             <h1 className="project-title">{project.title}</h1>
@@ -98,7 +115,14 @@ const Project_Page = () => {
         {ReactNAtive.map((project) => (
           <div key={project.id} className="project-wrapper">
             
-            <div className="project-container" style={{ backgroundColor: project.bgColor }}>
+            <div className="project-container"
+             style={{ backgroundColor: project.bgColor }}
+             onClick={
+              ()=>{
+                navigate(`/IndevidualProject/${project.id}`)
+              }
+             }
+             >
               <img src={project.imageSource} alt={`Project ${project.id}`} className="project-image" />
             </div>
             <h1 className="project-title">{project.title}</h1>
