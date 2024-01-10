@@ -7,7 +7,7 @@ import AnalyticsReport from '../assets/analyticalReport.png';
 import MobilDevelopment from '../assets/mobildevelopment.jpg';
 
 const Item = props => {
-    const [isHovered, setIsHovered] = useState(false);
+    
   return <div 
     className="slider-item" 
     style={{
@@ -15,14 +15,8 @@ const Item = props => {
         marginRight: 12,
       }
     }}
-    onClick={()=>{
-        alert(props.children)
-    }}
-    onMouseEnter={() => setIsHovered(true)}
-    onMouseLeave={() => setIsHovered(false)}
-    
     >
-         {isHovered ? <div style={{
+          <div style={{
             alignSelf:'center',
             color:'white',
             fontFamily:'Lato',
@@ -30,14 +24,18 @@ const Item = props => {
             fontSize:'x-large',
             textAlign: 'center',
             transition: 'opacity 0.10s ease-in-out'
-            }}>{props.textContent}</div> : props.children}
+            }}>{props.children}</div> 
     </div>
 }
 
 
 const Slider = props => {
+
+
+  
   const containerRef = React.useRef(null)
   
+
   const styles = {
     hidescroll: {
       width: '100%',
@@ -65,41 +63,42 @@ const Slider = props => {
 
   return (
     <div className="slider-wrapper" style={styles.hidescroll}>
-     <div className="Expertices">
-        <text id="expert" style={{ color:'white',
-                fontFamily:"Lato",
-                marginLeft:'2vw',
-                fontSize:'xx-large',
-                
-                }}>
-            My Expertices
-        </text>
-     </div>
-      <div className="slider-container" style={styles.container} ref={containerRef}>
+     
+      {/* <div className="slider-container" style={styles.container} ref={containerRef}>
         <ul className="slider-list">
-          <Item onClick={handleClick} textContent="Interactive Business Intelligence Dashboards" >
+          <Item textContent="Interactive Business Intelligence Dashboards" >
             <img 
              src={BIDashbord} 
              alt={"Interactive Business Intelligence Dashboards"}/>
           </Item>
-          <Item onClick={handleClick} textContent="Interactive Mobil Dashboards">
+          <Item textContent="Interactive Mobil Dashboards">
             <img 
              src={MobilDashbord}
              alt={"Interactive Mobil Dashboards"}/>
           </Item>
-          <Item onClick={handleClick} textContent="Analytical Reportss">
+          <Item textContent="Analytical Reportss">
             <img
              src={AnalyticsReport}
               alt={"Analytical Reports"}/>
           </Item>
-          <Item onClick={handleClick} textContent="Native Mobil Application Development">
+          <Item textContent="Native Mobil Application Development">
            <img
             src={MobilDevelopment}
             alt={"Native Mobil Application Development"}/>
           </Item>
           
         </ul>
-      </div>
+      </div> */}
+
+<div className="slider-container" style={styles.container}  ref={containerRef}>
+      <ul className="slider-list">
+        {props.projectImages.map((item, index) => (
+          <Item key={index} >
+            <img src={item} />
+          </Item>
+        ))}
+      </ul>
+    </div>
     </div>
   )
 

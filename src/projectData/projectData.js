@@ -3,6 +3,13 @@
 import FinancialReport from '../assets/financialreport.png';
 import FinancialReport2 from '../assets/back10.jpg';
 
+// project7 images
+import p7_1 from '../assets/pro_7img1.png';
+import p7_2 from '../assets/pro_7img2.png';
+import p7_3 from '../assets/pro_7img3.png';
+
+
+
 const projectsData = [
     {
       id: 1,
@@ -54,11 +61,14 @@ const projectsData = [
       },
       {
         id: 7,
-        title: 'Project 7',
-        description: 'Description for Project 1.',
+        title: 'Furniture Reality',
+        description: `Furniture Reality is a user-friendly mobile app that utilizes Augmented Reality to bring furniture to life in users' spaces. With a straightforward interface, it allows customers to visualize furniture in their rooms, helping them assess size, scale, and style. Users can customize furniture colors and finishes to match existing decor and preview it in different lighting conditions, minimizing the likelihood of dissatisfaction and returns.`,
         imageSource: FinancialReport,
         bgColor: '#626635',
-        projectCategory:'APPLICATION'
+        projectCategory:'APPLICATION',
+        projectImages:[p7_1,p7_2,p7_3],
+        projectSkills:['ReactNative','React Viro(AR)','Java Script','3D - modeling','CSS','HTML']
+        
       },
       {
         id: 8,
@@ -67,6 +77,7 @@ const projectsData = [
         imageSource:FinancialReport,
         bgColor: '#DEAE4D',
         projectCategory:'APPLICATION'
+      
       },
 
     // Add more projects as needed
