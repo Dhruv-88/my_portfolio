@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   const handleCertificationsClick = () => {
-    navigate('/certifications');
+    navigate('/AboutMe');
   };
 
   useEffect(() => {
