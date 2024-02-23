@@ -6,15 +6,10 @@
 */
 
 
-
-@keyframes pop-in {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
+.body{
+  font-family:lato;
 }
+
 .right-half {
   flex: 1;
   background-color: lightgrey; /* Change this to your desired color */
@@ -100,11 +95,13 @@
     align-self: center;
     align-items: center;
     border-radius: 10vh;
-    margin-top: 5vh;
+    margin-top: 2vh;
     font-size: large;
     border-width:0;
+    
     transition: background-color 0.3s ease; /* Add a smooth transition effect */
-}
+  
+  }
 
 .section2 button:hover {
   background-color:grey;
@@ -118,6 +115,8 @@
   background-size:100vw 100vh;
   repeat:false;
   font-family:'Lato';
+
+  /* border:1px solid black; */
  
   
  
@@ -179,7 +178,6 @@ button:hover {
     color:white;
   
 }
-
 
 
 
@@ -291,13 +289,15 @@ p {
     height: 50vh;
     display:flex;
     flex-direction:row;
-    color:white
+    color:white;
+    background-color: white;
   }
 
   .Section6 .Subsection1{
     align-self:left;
     padding-left:5vw;
     justify-content:center;
+    
   }
    
   .Section6 .Subsection1 p{
@@ -322,17 +322,23 @@ p {
     .section1 .left-part {
       width:80vw;
       font-size: medium;
+      padding-bottom:10vh;
     }
 
     .left-part p{
-      font-size:23px;
+      font-size:25px;
+    
     }
 
     .section2 h1{
       font-size: medium;
+      width: 80vw;
+      font-family:lato;
+      font-weight:100;
       
-      /* Additional styles for Section 2 */
     }
+
+   
 
     .section2 button{
       height:7vh;
@@ -346,13 +352,10 @@ p {
       font-size: small;
     }
 
-    .section2 h1{
-      width: 80vw;
-      
-    }
 
     .subsection1 h1{  
       font-size:30px;
+      font-weight:100;
     }
     
     .section3 img{
@@ -370,6 +373,8 @@ p {
       font-size:15px;
       width:80vw;
       margin-top:5vh;
+      font-weight:100;
+      
       
     }
     
@@ -397,6 +402,7 @@ p {
       justify-content: space-around;
       width:90vw;
       align-self:center;
+      
     }
     
     .CertiSubContainer {
@@ -412,6 +418,7 @@ p {
   
     .CertiSubContainer h2 {
       font-size:15px;
+      font-weight:100;
     }
 
     /* section5 */
@@ -426,5 +433,9 @@ p {
       font-size:small;
     }
 
-   
+    .Section6{
+      height:30vh;
+      background-color:red;
+    }
+    
   }

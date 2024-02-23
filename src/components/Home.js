@@ -7,13 +7,19 @@ import { useNavigate } from 'react-router-dom';
 import Slider from './Slider.js'
 import Google from '../assets/google.svg';
 import Microsoft from '../assets/microsoft.svg';
-import DataCamp from '../assets/datacamp.svg';
+import HackerRank from '../assets/hackerRank.png';
 import SplitSection from './SplitSection.js';
-import ProjectImage from '../assets/projectImage.png';
+import ProjectImage from '../assets/SuperMarketAnalysis1.png';
+import ContactForm from './ContactForm';
 
 
 const App = () => {
   const navigate = useNavigate();
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleModal = () => {
+    setShowModal(!showModal);
+  };
  
   return (
 
@@ -38,9 +44,12 @@ const App = () => {
       {/* Section 2 */}
     
       <div className="section section2">
-        <h1>
-          I Excel in Crafting Powerful Analytics Projects, Business Intelligence Dashboards, and Insightful Data  Reports.
-        </h1>
+        
+          <h1>
+            I Excel in Crafting Powerful Analytics Projects, Business Intelligence Dashboards, and Insightful Data  Reports.
+          </h1>
+       
+        
        
 
         
@@ -75,8 +84,13 @@ const App = () => {
           <img src={ProjectImage} alt="ProjectImage"/>
         </div>
         <div className="subsection2">
-          <h2 >Interactive Business Intellegent Dashbord for Takwandodrillscompany  to analyse <br/>financial reports,company performance and sales.</h2>
-          <button >View Dashbord</button>
+          <h2 >Interactive Business Intellegent Dashbord for SuperMarket Sales Data <br/>
+          to analyse key matrics, company performance and sales.</h2>
+          <button 
+          onClick={
+            ()=>navigate('/IndevidualProject/1')
+          }
+          className="ViewDashbordButton">View Dashbord</button>
         </div>
 
       </div>
@@ -98,8 +112,8 @@ const App = () => {
              </div>
 
              <div className="CertiSubContainer">
-                 <img src={DataCamp}/>
-                 <h2>Data Camp SQL Expert</h2>
+                 <img src={HackerRank}/>
+                 <h2>Hacker Rank SQL 5 Start Badge</h2>
              </div>
           </div>
       </div>
@@ -109,18 +123,28 @@ const App = () => {
        
        <p>I'd Love to work With You</p>
 
-       <button>
-        Contact Me
+       <button  onClick={
+        ()=>{
+          window.location.href = 'https://www.linkedin.com/in/dhruv-patel30/';
+        }
+       }>
+        Connect With Me
        </button>
+
+      
       </div>
 
       {/* Section 6  */}
       <div className="section Section6">
         <div class="Subsection1">
-          <p>
-            My Work
+          <p onClick={
+            ()=>navigate('/projects')
+          }>
+            My Work 
           </p>
-          <p>
+          <p onClick={
+            ()=>navigate('/AboutMe')
+          }>
             About Me
           </p>
         </div>

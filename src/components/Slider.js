@@ -1,10 +1,8 @@
 import React, { Component,useState } from 'react';
 import { render } from 'react-dom';
 import '../styles/SliderStyles.css';
-import BIDashbord from '../assets/dashbord.jpg';
-import MobilDashbord from '../assets/mobildashbord.png';
-import AnalyticsReport from '../assets/analyticalReport.png';
-import MobilDevelopment from '../assets/mobildevelopment.jpg';
+
+
 
 const Item = props => {
     

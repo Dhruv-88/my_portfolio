@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 
 const IndevidualProject = () => {
 
- 
   const { id } = useParams();
   const project = projectsData.find((project) => project.id === parseInt(id, 10));
   
@@ -37,7 +36,9 @@ const IndevidualProject = () => {
      </div>
 
      <div className="SectionTwo" style={{backgroundColor:`${project.bgColor}`}}>
-       
+       <div className="ImageTitle">
+        <h2 >Project Glimpse</h2>
+       </div>
         <Slider projectImages={project.projectImages} bg={project.bgColor}/>
      
      </div>
@@ -51,7 +52,7 @@ const IndevidualProject = () => {
         </ul>
 
         <div className="ButtonExplore">
-          <Link to="https://github.com/Dhruv-88/FurnitureReality">
+          <Link to={project.projectGithubLink}>
           <button >
             Continue on GitHub
            </button>

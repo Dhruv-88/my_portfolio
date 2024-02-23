@@ -3,7 +3,6 @@
 import React from 'react';
 import '../styles/projects.css'; // Add your CSS file for styling
 import Navbar from './Navbar';
-import FinancialReport from '../assets/financialreport.png';
 import { useNavigate } from 'react-router-dom';
 import projectsData from '../projectData/projectData.js';
 
@@ -79,10 +78,10 @@ const Project_Page = () => {
       </div>
 
       {/* Excel Projects */}
-
+{/* 
       <div className="projectHeading">
         <h1>
-         React Native projects
+         Excel Projects
         </h1>
       </div>
       <div className="project-section">
@@ -102,13 +101,13 @@ const Project_Page = () => {
             <h1 className="project-title">{project.title}</h1>
           </div>
         ))}
-      </div>
+      </div> */}
 
        {/* React NativeProjects */}
 
        <div className="projectHeading">
         <h1>
-          Excel projects
+          React Native Projects
         </h1>
       </div>
       <div className="project-section">
@@ -123,7 +122,10 @@ const Project_Page = () => {
               }
              }
              >
-              <img src={project.imageSource} alt={`Project ${project.id}`} className="project-image" />
+              <img src={project.imageSource}
+               alt={`Project ${project.id}`}
+               className="project-image"
+              />
             </div>
             <h1 className="project-title">{project.title}</h1>
           </div>

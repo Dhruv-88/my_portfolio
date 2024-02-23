@@ -13,6 +13,7 @@
     width:100vw;
     justify-content:center;
     display:flex;
+    color:white;
 }
 
 .sectiontitle{
@@ -24,6 +25,7 @@
     width:90vw;
     margin-top:10vh;
     margin-left:2.5vw;
+    color:white;
    
    }
 .sectiontitle p{
@@ -32,12 +34,13 @@
 
 
 .project-section {
-    height:70vh;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 2%;
     background-color:black;
+    
   }
   
   .project-wrapper {
@@ -62,6 +65,8 @@
     display:flex;
     justify-content:center;
     align-self:center;
+    
+    
   }
   
   .project-image {

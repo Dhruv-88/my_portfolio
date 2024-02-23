@@ -3,6 +3,7 @@ body {
   margin: 0; /* Remove default margin */
   background-color: black; 
   font-family:lato;
+  
 }
 
 .Section1{
@@ -70,7 +71,7 @@ body {
 
 .Section2Left h3{
   color:black;
-  font-size:30px;
+  font-size:40px;
 }
 
 
@@ -87,7 +88,6 @@ body {
   width:60%;
   height:90%;
   
-
 }
 
 .certiImage{
@@ -108,11 +108,7 @@ body {
 
 .s3rsubcontainer h3{
   width:80%;
-  
   margin:auto;
-
-
-
 }
 
 .s3rsubcontainer h3{
@@ -123,5 +119,90 @@ body {
 }
 
 
+/* section 4 */
 
-/* Add any additional styling as needed */
+
+.Section4{
+  height:100vh;
+  width:100vw;
+  background-color:white;
+  display:flex;
+  flex-direction:row;
+  background-image: url('../assets/personalImage_1.png');
+  background-size: cover;
+  background-position: center; 
+
+} 
+
+.Section4 h3{
+  font-size:50px;
+  margin:0 auto;
+  margin-top:15%;
+  color:black;
+  
+  
+}
+
+.Section6{
+  background-color: black;
+  height: 50vh;
+  display:flex;
+  flex-direction:row;
+  color:white
+}
+
+.Section6 .Subsection1{
+  align-self:left;
+  padding-left:5vw;
+  justify-content:center;
+}
+ 
+.Section6 .Subsection1 p{
+  font-size:25px;
+  justify-content:space-around;
+  text-decoration: underline;
+  
+}
+
+
+@media (max-width: 768px) {
+
+  .Section1Left img{
+    width:90%;
+    height:50%;
+    border:2px solid white;
+  }
+
+
+.Section1Right h3{
+  color:white;
+  font-size:19px;
+  font-weight:100;
+
+}
+.Section2Left h3{
+  font-size:19px;
+  font-weight:100;
+}
+
+.Section2Right img{
+  width:90%;
+  height:70%;
+  
+}
+.s3rsubcontainer h3{
+  color:white;
+  font-size:19px;
+  font-weight:100;
+}
+.Section4 h3{
+  font-size:20px;
+  margin:0 auto;
+  margin-top:70%;
+  color:black;
+  width:70%;
+  font-weight:100;
+ 
+  
+}
+}

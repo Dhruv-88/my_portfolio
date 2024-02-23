@@ -6,9 +6,12 @@ import Navbar from './Navbar';
 import ProfileImage from '../assets/profileimage.jpeg';
 import Certi from '../assets/certifications.png';
 import TimeLine from '../assets/Timeline.png';
-
+import PersonalImage1 from '../assets/personalImage_1.png';
+import PersonalImage2 from '../assets/personalimage_2.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const AboutMe = () => {
+  const navigate = useNavigate();
   return (
     <div className="certifications-container">
         <Navbar/>
@@ -34,8 +37,7 @@ const AboutMe = () => {
         <div className="Section2Left">
             <div>
                 <h3 className="s1rsubcontainer" >
-                  I'm currently Masters student ,at Northeastern university,Toronto.Here I'm learning valueable insights of industry,sharping my skills and evelvoing my personal skills by adventuring new journey in 
-                  Canada with rich diversity and very kind and humble people. Previously i have completed my Bacholr's Degree in computer science Engineering which fullfilled me with the technical knowledge as well as wonderful academic and personal experiences. I scored 9.7 GPA in my bachlors degree and currently pursuing my masters study with 3.89 GPA in masters.
+                  I'm a Master's student at Northeastern University, Toronto, where I'm gaining valuable industry insights and honing my skills while embracing Canada's rich diversity and the kindness of its people. With a Bachelor's degree in Computer Science Engineering, I attained a GPA of 9.7, and I'm currently pursuing my Master's with a GPA of 3.89.
                 </h3>
             </div>
           </div>
@@ -46,15 +48,45 @@ const AboutMe = () => {
       </div>
      
      {/* section 3 */}
-       {/* section 1 */}
+      
        <div className="Section3">
           <div className="s3rsubcontainer" >
               <h3>
-                I am equipped with the all the skills require for a data Analyst.I have recently passed  Microsft pl-300(powerbi certification) exam which honors me with the business Intelligence tools and technique.I'm googles certified data analyst which testify my knowledge for all the fundamental of data analyst prospect.
-                Along with technical skills i'm active investor with overall 60% return on my 3 year's of investment journey.I also posses the skills of native mobile development using React native and web application development with react and java script. I have implement this skills by working on live industry projects as well freelancing task.
+              I possess a comprehensive skill set suitable for a Data Analyst role. Recently, I successfully passed the Microsoft PL-300 (Power BI Certification) exam, which has equipped me with advanced knowledge in business intelligence tools and techniques. Furthermore, I am a Google Certified Data Analyst, demonstrating proficiency in fundamental data analysis principles.<br/><br/>Beyond my technical expertise, I am an active investor, achieving an impressive 60% return on investment over a three-year period. Additionally, I am proficient in native mobile development using React Native, as well as web application development with React and JavaScript. I have applied these skills through participation in both live industry projects and freelancing tasks.
               </h3>
           </div>
         </div>
+
+        {/* section 4 */}
+
+        <div className="Section4" >
+          
+           <h3>
+            I love hiking, exploring nature and sunshine ...
+           </h3>
+         
+           
+
+        </div>
+
+        <div className="section Section6">
+        <div class="Subsection1">
+          <p onClick={
+            ()=>{
+              navigate('/projects')
+            }
+          }>
+            My Work
+          </p>
+          <p onClick={
+            ()=>{
+              navigate('/')
+            }
+          }>
+            Home
+          </p>
+        </div>
+      </div>
       
 
     </div>
